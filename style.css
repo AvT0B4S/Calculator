@@ -1,0 +1,84 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0px;
+}
+body{
+    align-items: center;
+    background: linear-gradient(320deg,rgb(121, 75, 75),rgb(151, 120, 120),rgb(216, 129, 129));
+    display: flex;
+    font-family: 'Dosis',sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+}
+.calculator{
+    background: rgb(106, 70, 70);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    display: table-column;
+    box-shadow: 0 4px 30px rgb(93, 57, 57);
+    flex-basis: 600px;
+    height: 500px;
+    padding: 20px 35px;
+}
+.screen{
+    background: rgb(208, 182, 146);
+    border-radius: 10px;
+    padding-right: 10px;
+    font-size: 35px;
+    overflow: auto;
+    text-align: right;
+}
+.buttons{
+    display: grid;
+    justify-content: center;
+}
+.buttons_row{
+    display: flex;
+    justify-content: left;
+}
+.calc-button{
+    width: 40px;
+    height: 40px;
+    border: 1px;
+    background-color: rgb(152, 129, 157);
+    margin: 10px;
+    border-radius: 10px;
+}
+.calc-button:hover,.zerobtn:hover,.deleteAll:hover{
+    background-color: rgb(139, 154, 149);
+    
+}
+.calc-button:active,.zerobtn:active,.deleteAll:active{
+    background-color: rgb(132, 132, 109);
+}
+.deleteAll{
+    flex-basis: 45%;
+    width: 40px;
+    height: 40px;
+    border: 1px;
+    background-color: rgb(152, 129, 157);
+    margin: 10px;
+    border-radius: 10px;
+}
+.zerobtn{
+    flex-basis: 45%;
+    width: 40px;
+    height: 40px;
+    border: 1px;
+    background-color: rgb(152, 129, 157);
+    margin: 10px;
+    border-radius: 10px;
+}
+.calc-button:last-child{
+    background-color: rgb(175, 122, 203);
+}
+.calc-button:last-child:hover{
+    background-color: rgb(145, 102, 168);
+}
